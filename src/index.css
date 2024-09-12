@@ -1,0 +1,614 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* index.css */
+body {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Add any custom global styling here */
+
+/* Responsive Typography */
+.hero-title {
+  @apply text-4xl font-bold md:text-5xl;
+}
+
+.hero-subtitle {
+  @apply text-lg;
+}
+
+/* Button Styles */
+button {
+  @apply rounded-full bg-orange-500 px-8 py-3 font-semibold text-white transition duration-300;
+}
+
+button:hover {
+  @apply bg-orange-600;
+}
+
+/* Trusted by Section Styles */
+.trusted-section {
+  @apply bg-gray-100 py-12 text-center;
+}
+
+.trusted-section h2 {
+  @apply mb-6 text-lg font-semibold uppercase tracking-wider;
+}
+
+.trusted-logos {
+  @apply grid gap-8 lg:gap-16; /* Apply grid layout with responsive gaps */
+}
+
+.trusted-logos img {
+  @apply h-20 w-auto opacity-75 transition duration-300 ease-in-out hover:opacity-100;
+}
+
+/* Why Use Us Section */
+/* Why Use Us Section */
+/* Why Use Us Section */
+.why-use-us-section {
+  @apply py-12 text-center;
+}
+
+.why-use-us-title {
+  @apply mb-8 text-2xl font-bold;
+}
+
+.why-use-us-grid {
+  @apply grid grid-cols-1 gap-8 md:grid-cols-3;
+}
+
+.why-use-us-card {
+  @apply rounded-lg bg-white p-6 text-center shadow-md transition duration-300 ease-in-out hover:shadow-lg;
+  @apply flex flex-col items-center justify-center; /* Flexbox layout to center content */
+}
+
+.why-use-us-icon {
+  @apply mb-4 text-5xl text-orange-500; /* Icon size, color, and margin */
+}
+
+.why-use-us-title-card {
+  @apply mb-2 text-xl font-semibold;
+}
+
+.why-use-us-description {
+  @apply text-gray-600;
+}
+
+/* Extra Small Devices (sm) */
+@screen sm {
+  .hero-title {
+    font-size: 1.875rem; /* 30px */
+  }
+  .hero-subtitle {
+    @apply text-base;
+    font-size: 1.25rem; /* 20px */
+  }
+  button {
+    @apply px-6 py-2;
+  }
+
+  .trusted-logos {
+    @apply grid-cols-2;
+  }
+}
+
+/* Medium Devices (md) */
+@screen md {
+  .hero-title {
+    font-size: 2.25rem; /* 36px */
+  }
+  .hero-subtitle {
+    @apply text-lg;
+    font-size: 1.5rem; /* 24px */
+  }
+  .trusted-logos {
+    @apply grid-cols-3;
+  }
+}
+
+/* Large Devices (lg) */
+@screen lg {
+  .hero-title {
+    font-size: 3rem; /* 48px */
+  }
+  .hero-subtitle {
+    @apply text-xl;
+    font-size: 1.75rem; /* 28px */
+  }
+  button {
+    @apply px-8 py-3;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .trusted-logos {
+    @apply grid-cols-4;
+  }
+}
+
+/* Extra Large Devices (xl) */
+@screen xl {
+  .hero-title {
+    font-size: 3.75rem; /* 60px */
+  }
+  .hero-subtitle {
+    font-size: 2rem; /* 32px */
+  }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+}
+
+/* 2XL Devices */
+@screen 2xl {
+  .hero-title {
+    font-size: 4.5rem; /* 72px */
+  }
+  .hero-subtitle {
+    font-size: 2.25rem; /* 36px */
+  }
+}
+
+/* index.css */
+
+/* Top Features Section */
+.top-features-section {
+  @apply py-12 text-center; /* Padding and alignment */
+}
+
+.top-features-title {
+  @apply mb-8 text-2xl font-bold text-blue-700; /* Title styling */
+}
+
+.top-features-grid {
+  @apply grid grid-cols-1 gap-6 md:grid-cols-4; /* Grid layout for different screen sizes */
+}
+
+.top-feature-card {
+  @apply rounded-lg bg-white p-6 shadow-md transition duration-300 ease-in-out hover:shadow-lg;
+  @apply flex flex-col items-center justify-center; /* Flexbox to center content */
+}
+
+.top-feature-icon {
+  @apply mb-4 text-4xl text-orange-500; /* Icon size and color */
+}
+
+.top-feature-title {
+  @apply mb-2 text-lg font-semibold; /* Title styling */
+}
+
+.top-feature-description {
+  @apply text-gray-600; /* Description styling */
+}
+
+/* index.css */
+
+/* Generate RSS Feeds Section */
+.generate-rss-feeds-section {
+  @apply py-12; /* Padding */
+}
+
+.generate-title {
+  @apply mb-4 text-3xl font-bold; /* Title styling */
+}
+
+.generate-description {
+  @apply mb-8 text-lg text-gray-600; /* Description styling */
+}
+
+.generate-grid {
+  @apply grid grid-cols-1 gap-6 sm:grid-cols-2; /* Grid layout for cards */
+}
+
+.generate-feature-card {
+  @apply rounded-lg bg-white p-6 shadow-md transition duration-300 ease-in-out hover:shadow-lg; /* Card styling */
+  @apply flex flex-col items-start justify-start; /* Flexbox layout */
+}
+
+.generate-feature-icon {
+  @apply mb-4 text-3xl text-orange-500; /* Icon size and color */
+}
+
+.generate-feature-title {
+  @apply mb-2 text-lg font-semibold; /* Title styling */
+}
+
+.generate-feature-description {
+  @apply text-gray-600; /* Description styling */
+}
+
+.rss-app-image-container {
+  @apply flex items-center justify-center; /* Center the image */
+}
+
+.rss-app-image {
+  @apply w-full max-w-md lg:max-w-lg; /* Image responsive sizing */
+}
+
+/* index.css */
+
+/* Embed News Feeds Section */
+.embed-news-feeds-section {
+  @apply py-12; /* Padding */
+}
+
+.embed-title {
+  @apply mb-4 text-3xl font-bold; /* Title styling */
+}
+
+.embed-description {
+  @apply mb-8 text-lg text-gray-600; /* Description styling */
+}
+
+.embed-grid {
+  @apply grid grid-cols-1 gap-6 sm:grid-cols-2; /* Grid layout for cards */
+}
+
+.embed-feature-card {
+  @apply rounded-lg bg-white p-6 shadow-md transition duration-300 ease-in-out hover:shadow-lg; /* Card styling */
+  @apply flex flex-col items-start justify-start; /* Flexbox layout */
+}
+
+.embed-feature-icon {
+  @apply mb-4 text-3xl text-orange-500; /* Icon size and color */
+}
+
+.embed-feature-title {
+  @apply mb-2 text-lg font-semibold; /* Title styling */
+}
+
+.embed-feature-description {
+  @apply text-gray-600; /* Description styling */
+}
+
+/* index.css */
+
+/* Use Case Section */
+.use-case-section {
+  @apply py-12; /* Padding */
+}
+
+.use-case-title {
+  @apply mb-4 text-2xl font-bold; /* Title styling */
+}
+
+.use-case-description {
+  @apply mb-8 text-lg text-gray-600; /* Description styling */
+}
+
+.use-case-grid {
+  @apply grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2; /* Grid layout for cards */
+}
+
+.use-case-card {
+  @apply rounded-lg bg-white p-6 shadow-md transition duration-300 ease-in-out hover:shadow-lg; /* Card styling */
+  @apply flex flex-col items-start justify-start; /* Flexbox layout */
+}
+
+.use-case-icon {
+  @apply mb-4  text-3xl text-blue-500; /* Icon size and color */
+}
+
+.use-case-feature-title {
+  @apply mb-2 text-lg font-semibold; /* Title styling */
+}
+
+.use-case-feature-description {
+  @apply text-gray-600; /* Description styling */
+}
+
+/* index.css */
+
+/* RSS Widgets Section */
+.rss-widgets-section {
+  @apply py-12; /* Padding */
+}
+
+.rss-widgets-title {
+  @apply mb-4 text-2xl font-bold; /* Title styling */
+}
+
+.rss-widgets-description {
+  @apply mb-8 text-lg text-gray-600; /* Description styling */
+}
+
+.rss-widgets-grid {
+  @apply grid grid-cols-1 gap-6 sm:grid-cols-2; /* Grid layout for cards */
+}
+
+.rss-widgets-feature-card {
+  @apply rounded-lg bg-white p-6 shadow-md transition duration-300 ease-in-out hover:shadow-lg; /* Card styling */
+  @apply flex flex-col items-start justify-start; /* Flexbox layout */
+}
+
+.rss-widgets-icon {
+  @apply mb-4 text-3xl text-orange-500; /* Icon size and color */
+}
+
+.rss-widgets-feature-title {
+  @apply mb-2 text-lg font-semibold; /* Title styling */
+}
+
+.rss-widgets-feature-description {
+  @apply text-gray-600; /* Description styling */
+}
+
+.rss-app-image-container {
+  @apply flex items-center justify-center; /* Center the image */
+}
+
+.rss-app-image {
+  @apply w-full max-w-md lg:max-w-lg; /* Image responsive sizing */
+}
+
+/* index.css */
+
+/* RSS Use Cases Section */
+.rss-use-cases-section {
+  @apply py-12; /* Padding */
+}
+
+.rss-use-cases-title {
+  @apply mb-4 text-2xl font-bold; /* Title styling */
+}
+
+.rss-use-cases-description {
+  @apply mb-8 text-lg text-gray-600; /* Description styling */
+}
+
+.rss-use-cases-grid {
+  @apply grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3; /* Grid layout for cards */
+}
+
+.rss-use-case-card {
+  @apply rounded-lg bg-white p-6 shadow-md transition duration-300 ease-in-out hover:shadow-lg; /* Card styling */
+  @apply flex flex-col items-start justify-start; /* Flexbox layout */
+}
+
+.rss-use-case-icon {
+  @apply mb-4 text-3xl text-blue-500; /* Icon size and color */
+}
+
+.rss-use-case-title {
+  @apply mb-2 text-lg font-semibold; /* Title styling */
+}
+
+.rss-use-case-description {
+  @apply text-gray-600; /* Description styling */
+}
+
+/* index.css */
+
+/* RSS Integrations Section */
+.rss-integrations-section {
+  @apply py-12 text-center; /* Padding and alignment */
+}
+
+.rss-integrations-title {
+  @apply mb-4 text-3xl font-bold; /* Title styling */
+}
+
+.rss-integrations-description {
+  @apply mb-8 text-lg text-gray-600; /* Description styling */
+}
+
+.rss-app-image-container {
+  @apply mt-8 flex justify-center; /* Centering the RSS app image */
+}
+
+.rss-app-image {
+  @apply h-full w-full max-w-md; /* Size and responsiveness for the RSS app image */
+}
+
+/* index.css */
+
+/* News Feeds Section */
+.news-feeds-section {
+  @apply py-12 text-center; /* Padding and alignment */
+}
+
+.news-feeds-title {
+  @apply mb-4 text-2xl font-bold; /* Title styling */
+}
+
+.news-feeds-description {
+  @apply mb-8 text-lg text-gray-600; /* Description styling */
+}
+
+.news-feeds-grid {
+  @apply grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4; /* Grid layout for cards */
+}
+
+.news-feeds-card {
+  @apply rounded-lg bg-white p-6 shadow-md transition duration-300 ease-in-out hover:shadow-lg; /* Card styling */
+  @apply flex flex-col items-center justify-center text-center; /* Flexbox layout */
+}
+
+.news-feeds-logo {
+  @apply mb-4 h-16 w-16; /* Logo styling */
+}
+
+.news-feeds-feature-title {
+  @apply mb-2 text-lg font-semibold; /* Title styling */
+}
+
+.news-feeds-feature-description {
+  @apply text-gray-600; /* Description styling */
+}
+
+.news-feeds-button {
+  @apply mt-8 rounded-full bg-blue-600 px-8 py-3 text-white transition duration-300 hover:bg-blue-700; /* Button styling */
+}
+
+/* index.css */
+
+/* Top RSS Sources Section */
+.top-rss-sources-section {
+  @apply py-12 text-center; /* Padding and alignment */
+}
+
+.top-rss-sources-title {
+  @apply mb-4 text-2xl font-bold; /* Title styling */
+}
+
+.top-rss-sources-description {
+  @apply mb-8 text-lg text-gray-600; /* Description styling */
+}
+
+.top-rss-sources-grid {
+  @apply grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3; /* Grid layout for cards */
+}
+
+.top-rss-sources-card {
+  @apply rounded-lg bg-white p-6 shadow-md transition duration-300 ease-in-out hover:shadow-lg; /* Card styling */
+  @apply flex flex-col items-start justify-start text-left; /* Flexbox layout */
+}
+
+.top-rss-sources-icon {
+  @apply mb-4 text-3xl text-orange-500; /* Icon size and color */
+}
+
+.top-rss-sources-feature-title {
+  @apply mb-2 text-lg font-semibold; /* Title styling */
+}
+
+.top-rss-sources-feature-description {
+  @apply text-gray-600; /* Description styling */
+}
+
+/* index.css */
+
+/* Testimonials Section */
+.testimonials-section {
+  @apply py-12 text-center; /* Padding and alignment */
+}
+
+.testimonials-title {
+  @apply mb-4 text-2xl font-bold; /* Title styling */
+}
+
+.testimonials-grid {
+  @apply grid grid-cols-1 gap-6 sm:grid-cols-2; /* Grid layout for testimonials */
+}
+
+.testimonial-card {
+  @apply rounded-lg bg-white p-6 shadow-md transition duration-300 ease-in-out hover:shadow-lg; /* Card styling */
+  @apply flex flex-col items-start text-left; /* Flexbox layout */
+}
+
+.testimonial-header {
+  @apply mb-4 flex items-center; /* Flexbox layout for header */
+}
+
+.testimonial-avatar {
+  @apply mr-4 h-12 w-12 rounded-full; /* Avatar styling */
+}
+
+.testimonial-info {
+  @apply flex flex-col; /* Info layout */
+}
+
+.testimonial-name {
+  @apply text-lg font-semibold; /* Name styling */
+}
+
+.testimonial-position {
+  @apply text-gray-600; /* Position styling */
+}
+
+.testimonial-message {
+  @apply text-gray-700; /* Message styling */
+}
+
+/* index.css */
+
+/* Call to Action Section */
+.call-to-action-section {
+  @apply py-12 text-center text-white; /* Background, text color, and padding */
+}
+
+.cta-title {
+  @apply text-xl font-bold; /* Title styling */
+}
+
+.cta-button {
+  @apply rounded-full bg-orange-500 px-8 py-3 font-semibold text-white transition duration-300 hover:bg-orange-600; /* Button styling */
+}
+
+.cta-info {
+  @apply mt-4 flex flex-col items-center space-y-2; /* Spacing and layout for the info items */
+}
+
+.cta-info-item {
+  @apply text-sm; /* Info item styling */
+}
+
+/* index.css */
+
+/* Footer Links Section */
+.footer-links-section {
+  @apply py-8 text-center; /* Padding and alignment */
+}
+
+.footer-category {
+  @apply text-left; /* Align the categories to the left */
+}
+
+.footer-category-title {
+  @apply mb-2 font-semibold; /* Category title styling */
+}
+
+.footer-links-list {
+  @apply list-none p-0; /* Reset the list styles */
+}
+
+.footer-link {
+  @apply mb-2; /* Space between links */
+}
+
+.footer-link a {
+  @apply text-blue-600 hover:underline; /* Link styling */
+}
+
+/* index.css */
+
+/* Footer Section */
+.footer-section {
+  @apply border-t border-gray-300 py-4 text-gray-600; /* Padding, border, and color */
+}
+
+.footer-left {
+  @apply flex items-center; /* Flexbox alignment */
+}
+
+.footer-logo {
+  @apply h-8 w-8 text-orange-500; /* Logo size and color */
+}
+
+.footer-links {
+  @apply flex space-x-4; /* Flexbox layout and spacing between links */
+}
+
+.footer-right {
+  @apply flex items-center; /* Flexbox alignment for language switcher */
+}
+
+.footer-right .w-6 {
+  @apply text-gray-600; /* Icon styling for the globe icon */
+}
