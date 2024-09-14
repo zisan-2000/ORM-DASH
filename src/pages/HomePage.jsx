@@ -4,7 +4,7 @@ import React from "react";
 import EmbedNewsFeeds from "../components/EmbedNewsFeeds";
 import FooterSection from "../components/FooterSection";
 import GenerateRssFeeds from "../components/GenerateRssFeeds";
-import Header from "../components/Header";
+import Header from "../components/Header/Header";
 import Hero from "../components/Hero";
 import RssUseCasesSection from "../components/RssUseCasesSection";
 import RssWidgets from "../components/RssWidgets";

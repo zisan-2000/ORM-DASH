@@ -20,15 +20,272 @@ export const backgroundColors = {
   footer: "bg-slate-100",
 };
 
-import { FaChevronDown, FaRss } from "react-icons/fa"; // RSS icon for logo
+import {
+  FaBars,
+  FaChevronDown,
+  FaColumns,
+  FaDiscord,
+  FaFacebook,
+  FaGoogle,
+  FaInstagram,
+  FaList,
+  FaPinterest,
+  FaReddit,
+  FaRss,
+  FaSlack,
+  FaTelegramPlane,
+  FaTh,
+  FaTiktok,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa"; // Import icons
 
 export const headerData = {
   logo: "ORMDASH.APP",
   logoIcon: <FaRss />, // RSS icon added
   navLinks: [
-    { name: "RSS Feeds", path: "/rss-feeds", hasDropdown: true },
-    { name: "RSS Widget", path: "/rss-widget", hasDropdown: true },
-    { name: "Bots", path: "/bots", hasDropdown: true },
+    {
+      name: "RSS Feeds",
+      path: "/rss-feeds",
+      hasDropdown: true,
+      dropdownItems: [
+        {
+          leftSection: {
+            title: "RSS Feeds →",
+            description: "Select which RSS feed you would like to create",
+          },
+          rightSection: [
+            { icon: <FaRss />, name: "RSS Generator", path: "/rss-generator" },
+            { icon: <FaRss />, name: "RSS Builder", path: "/rss-builder" },
+            {
+              icon: <FaRss />,
+              name: "Feeds from Topics",
+              path: "/feeds-from-topics",
+            },
+            {
+              icon: <FaYoutube />,
+              name: "YouTube RSS Feeds",
+              path: "/youtube-rss",
+            },
+            {
+              icon: <FaGoogle />,
+              name: "Google News Feeds",
+              path: "/google-news",
+            },
+            {
+              icon: <FaInstagram />,
+              name: "Instagram RSS Feeds",
+              path: "/instagram-rss",
+            },
+            {
+              icon: <FaFacebook />,
+              name: "Facebook Page RSS",
+              path: "/facebook-rss",
+            },
+            {
+              icon: <FaTiktok />,
+              name: "TikTok RSS Feeds",
+              path: "/tiktok-rss",
+            },
+            {
+              icon: <FaTwitter />,
+              name: "X / Twitter RSS Feeds",
+              path: "/twitter-rss",
+            },
+            {
+              icon: <FaTelegramPlane />,
+              name: "Telegram RSS Feeds",
+              path: "/telegram-rss",
+            },
+            {
+              icon: <FaPinterest />,
+              name: "Pinterest RSS Feeds",
+              path: "/pinterest-rss",
+            },
+            {
+              icon: <FaReddit />,
+              name: "Reddit RSS Feeds",
+              path: "/reddit-rss",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: "RSS Widget",
+      path: "/rss-widget",
+      hasDropdown: true,
+      dropdownItems: [
+        {
+          leftSection: {
+            title: "RSS Widgets →",
+            description: "Add HTML & RSS widgets to your website",
+          },
+          rightSection: [
+            {
+              icon: <FaTh />,
+              name: "News wall",
+              path: "/news-wall",
+              description: "Showcase the latest news all in one place",
+            },
+            {
+              icon: <FaList />,
+              name: "List",
+              path: "/list",
+              description: "Add the latest posts to your website",
+            },
+            {
+              icon: <FaColumns />,
+              name: "Carousel",
+              path: "/carousel",
+              description: "Display interactive content on your website",
+            },
+            {
+              icon: <FaBars />,
+              name: "Ticker",
+              path: "/ticker",
+              description: "Stream the latest headlines on your webpage",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: "Bots",
+      path: "/bots",
+      hasDropdown: true,
+      dropdownItems: [
+        {
+          leftSection: {
+            title: "Integration with Bots →",
+            description:
+              "Use Integration bots to get alerts in your messaging apps or email",
+          },
+          rightSection: [
+            {
+              icon: <FaDiscord />,
+              name: "X / Twitter Discord Bot",
+              path: "/discord-twitter-bot",
+            },
+            {
+              icon: <FaDiscord />,
+              name: "Instagram Discord Bot",
+              path: "/discord-instagram-bot",
+            },
+            {
+              icon: <FaDiscord />,
+              name: "RSS Feed Discord Bot",
+              path: "/discord-rss-feed-bot",
+            },
+            {
+              icon: <FaDiscord />,
+              name: "YouTube Discord Bot",
+              path: "/discord-youtube-bot",
+            },
+            {
+              icon: <FaDiscord />,
+              name: "TikTok Discord Bot",
+              path: "/discord-tiktok-bot",
+            },
+            {
+              icon: <FaDiscord />,
+              name: "Google News Discord Bot",
+              path: "/discord-google-news-bot",
+            },
+            {
+              icon: <FaTelegramPlane />,
+              name: "X / Twitter Telegram Bot",
+              path: "/telegram-twitter-bot",
+            },
+            {
+              icon: <FaTelegramPlane />,
+              name: "Instagram Telegram Bot",
+              path: "/telegram-instagram-bot",
+            },
+            {
+              icon: <FaTelegramPlane />,
+              name: "RSS Feed Telegram Bot",
+              path: "/telegram-rss-feed-bot",
+            },
+            {
+              icon: <FaTelegramPlane />,
+              name: "YouTube Telegram Bot",
+              path: "/telegram-youtube-bot",
+            },
+            {
+              icon: <FaTelegramPlane />,
+              name: "TikTok Telegram Bot",
+              path: "/telegram-tiktok-bot",
+            },
+            {
+              icon: <FaTelegramPlane />,
+              name: "Google News Telegram Bot",
+              path: "/telegram-google-news-bot",
+            },
+            {
+              icon: <FaSlack />,
+              name: "X / Twitter Slack Bot",
+              path: "/slack-twitter-bot",
+            },
+            {
+              icon: <FaSlack />,
+              name: "Instagram Slack Bot",
+              path: "/slack-instagram-bot",
+            },
+            {
+              icon: <FaSlack />,
+              name: "RSS Feed Slack Bot",
+              path: "/slack-rss-feed-bot",
+            },
+            {
+              icon: <FaSlack />,
+              name: "YouTube Slack Bot",
+              path: "/slack-youtube-bot",
+            },
+            {
+              icon: <FaSlack />,
+              name: "TikTok Slack Bot",
+              path: "/slack-tiktok-bot",
+            },
+            {
+              icon: <FaSlack />,
+              name: "Google News Slack Bot",
+              path: "/slack-google-news-bot",
+            },
+            {
+              icon: <FaEnvelope />,
+              name: "X / Twitter Email Bot",
+              path: "/email-twitter-bot",
+            },
+            {
+              icon: <FaEnvelope />,
+              name: "Instagram Email Bot",
+              path: "/email-instagram-bot",
+            },
+            {
+              icon: <FaEnvelope />,
+              name: "RSS Feed Email Bot",
+              path: "/email-rss-feed-bot",
+            },
+            {
+              icon: <FaEnvelope />,
+              name: "YouTube Email Bot",
+              path: "/email-youtube-bot",
+            },
+            {
+              icon: <FaEnvelope />,
+              name: "TikTok Email Bot",
+              path: "/email-tiktok-bot",
+            },
+            {
+              icon: <FaEnvelope />,
+              name: "Google News Email Bot",
+              path: "/email-google-news-bot",
+            },
+          ],
+        },
+      ],
+    },
     { name: "Blog", path: "/blog", hasDropdown: false },
     { name: "Log In", path: "/login", hasDropdown: false },
     { name: "Sign Up", path: "/signup", hasDropdown: false },
@@ -37,14 +294,14 @@ export const headerData = {
 };
 
 export const heroData = {
-  title: "The #1 Source of RSS Feeds",
-  subtitle: "Connect with Information You Care About",
-  description: "Get RSS Feeds from almost any webpage",
-  buttonText: "Get Started Now",
+  title: "Your Top Choice for RSS Feeds",
+  subtitle: "Stay Connected to What Matters Most",
+  description: "Easily generate RSS feeds from any website you visit.",
+  buttonText: "Start Now",
   stats: {
-    info: "Instantly generate RSS feeds from any URL",
-    users: "+2,693",
-    newUsers: "New Users Joined Last Week",
+    info: "Quickly create RSS feeds from any web page URL",
+    users: "Over 2,693 Users",
+    newUsers: "Joined Last Week",
   },
 };
 
@@ -52,17 +309,17 @@ export const heroData = {
 // src/data/data.jsx
 
 // Import the images first
-import HubSpotLogo from "../assets/ann-nahl.png";
-import MicrosoftLogo from "../assets/buzzmoving.png";
-import OhioUniversityLogo from "../assets/netreputation.png";
+import annnahl from "../assets/ann-nahl.png";
+import buzzmoving from "../assets/buzzmoving.png";
+import netreputation from "../assets/netreputation.png";
 
 // Trusted by section data
 export const trustedByData = {
-  title: "Trusted and used by thousands of companies",
+  title: "Trusted by Thousands of Leading Companies Worldwide",
   companies: [
-    { name: "Ohio University", logo: OhioUniversityLogo },
-    { name: "Microsoft", logo: MicrosoftLogo },
-    { name: "HubSpot", logo: HubSpotLogo },
+    { name: "ann-nahl", logo: annnahl },
+    { name: "buzzmoving", logo: buzzmoving },
+    { name: "netreputation", logo: netreputation },
   ],
 };
 
@@ -74,25 +331,25 @@ export const trustedByData = {
 import { FaBolt, FaHeart, FaNewspaper } from "react-icons/fa";
 
 export const whyUseUsData = {
-  title: "3 Reasons Why You Should Use Our Service",
+  title: "Top 3 Reasons to Choose Our Service",
   reasons: [
     {
       icon: <FaBolt className="why-use-us-icon" />, // JSX icon component
-      title: "Generate RSS Feeds",
+      title: "Effortless RSS Feed Generation",
       description:
-        "No coding required. Our feed generator can pick the right content for you.",
+        "No coding skills needed. Our tool automatically selects the best content for you.",
     },
     {
       icon: <FaNewspaper className="why-use-us-icon" />, // JSX icon component
-      title: "Embed News Feeds",
+      title: "Seamless News Feed Integration",
       description:
-        "Add auto-updated dynamic content to your website or mobile app.",
+        "Easily add real-time, dynamic content to your website or mobile app.",
     },
     {
       icon: <FaHeart className="why-use-us-icon" />, // JSX icon component
-      title: "Increase Engagement",
+      title: "Boost User Engagement",
       description:
-        "Syndicate your content and make it easy for users to access and consume your content.",
+        "Distribute your content across multiple platforms, making it more accessible for users.",
     },
   ],
 };
@@ -103,31 +360,31 @@ export const whyUseUsData = {
 import { FaCode, FaImage, FaSyncAlt, FaThLarge } from "react-icons/fa";
 
 export const topFeaturesData = {
-  title: "Top Features",
+  title: "Key Features",
   features: [
     {
       icon: <FaCode className="top-feature-icon" />, // JSX icon component
-      title: "No Coding",
+      title: "Code-Free Setup",
       description:
-        "Simply copy and paste the URL into the feed generator or RSS builder.",
+        "Just paste the URL into our feed generator or RSS builder—no coding required.",
     },
     {
       icon: <FaImage className="top-feature-icon" />, // JSX icon component
-      title: "Customization",
+      title: "Full Customization",
       description:
-        "Extract large images & customize your feed with advanced filters.",
+        "Easily extract high-quality images and fine-tune your feed with advanced filtering options.",
     },
     {
       icon: <FaSyncAlt className="top-feature-icon" />, // JSX icon component
-      title: "Auto-updated",
+      title: "Automatic Updates",
       description:
-        "The feed will update automatically, so you never miss any updates.",
+        "Your feed stays up-to-date automatically, ensuring you never miss a thing.",
     },
     {
       icon: <FaThLarge className="top-feature-icon" />, // JSX icon component
-      title: "Dynamic Widgets",
+      title: "Interactive Widgets",
       description:
-        "Bring content to your users with adaptive and simple widgets.",
+        "Engage users with dynamic, easy-to-integrate content widgets for a seamless experience.",
     },
   ],
 };
@@ -135,48 +392,48 @@ export const topFeaturesData = {
 // src/data/data.jsx
 
 // Import icons
-import { FaCogs, FaSearch, FaShareAlt, FaStar } from "react-icons/fa"; // Use FaShareAlt for social media icon
+import { FaCogs, FaSearch, FaShareAlt, FaStar } from "react-icons/fa";
 
 export const generateRssFeedsData = {
-  title: "Generate RSS Feeds",
+  title: "Create and Manage RSS Feeds",
   description:
-    "Aggregate and curate your favorite websites by turning them into auto-updated RSS feeds. Fastest RSS finder and creator on the market.",
+    "Easily turn your favorite websites into auto-updated RSS feeds. The fastest and most reliable RSS generator on the market.",
   features: [
     {
       icon: <FaCogs className="generate-feature-icon" />,
-      title: "RSS Generator",
+      title: "RSS Feed Generator",
       description:
-        "Generate a feed from almost any website using our advanced AI.",
+        "Automatically generate RSS feeds from almost any site using our powerful AI tool.",
     },
     {
       icon: <FaCogs className="generate-feature-icon" />,
-      title: "RSS Builder",
+      title: "Custom RSS Builder",
       description:
-        "Manually select the elements you want to include in your RSS feed.",
+        "Select specific elements to include in your RSS feed for full customization.",
     },
     {
       icon: <FaCode className="generate-feature-icon" />,
-      title: "No Coding",
+      title: "No Coding Required",
       description:
-        "Coding not required! Just enter the webpage URL to get your RSS feed.",
+        "Simply input the webpage URL—no coding needed to generate your RSS feed.",
     },
     {
       icon: <FaStar className="generate-feature-icon" />,
-      title: "1000+ Sources",
+      title: "1000+ Supported Sources",
       description:
-        "Support for thousands of popular websites to create your RSS feed from.",
+        "Choose from thousands of popular websites to build your RSS feeds quickly.",
     },
     {
       icon: <FaSearch className="generate-feature-icon" />,
-      title: "RSS Finder",
+      title: "Advanced RSS Finder",
       description:
-        "Discover and subscribe to new RSS feeds with our advanced RSS Finder.",
+        "Easily discover and subscribe to new RSS feeds with our smart RSS Finder.",
     },
     {
-      icon: <FaShareAlt className="generate-feature-icon" />, // Replace with FaShareAlt
-      title: "Social Media",
+      icon: <FaShareAlt className="generate-feature-icon" />,
+      title: "Social Media Integration",
       description:
-        "Get new content from almost any website or social media with our feed generator.",
+        "Generate feeds from almost any website or social media platform effortlessly.",
     },
   ],
 };
@@ -187,42 +444,44 @@ export const generateRssFeedsData = {
 import { FaBell, FaFilter, FaFolderOpen } from "react-icons/fa";
 
 export const embedNewsFeedsData = {
-  title: "Embed News Feeds",
+  title: "Embed Dynamic News Feeds",
   description:
-    "Take control of your content using our cloud based all-in-one news feeds solution. Easily embed dynamic content on your website.",
+    "Easily manage and control your content with our cloud-based, all-in-one news feed solution. Effortlessly embed real-time content on your website.",
   features: [
     {
       icon: <FaRss className="embed-feature-icon" />,
-      title: "News Feeds",
+      title: "Real-Time News Feeds",
       description:
-        "Dynamically updated news feeds at the tips of your fingers.",
+        "Access and display dynamically updated news feeds instantly.",
     },
     {
       icon: <FaCogs className="embed-feature-icon" />,
-      title: "Bundles",
-      description: "Easily bundle multiple feeds into one super feed.",
+      title: "Feed Bundles",
+      description: "Combine multiple feeds into one comprehensive super feed.",
     },
     {
       icon: <FaFolderOpen className="embed-feature-icon" />,
-      title: "Collections",
+      title: "Content Collections",
       description:
-        "Curate and collect individual posts to create your unique feed.",
+        "Curate specific posts to create personalized, unique feed collections.",
     },
     {
       icon: <FaFilter className="embed-feature-icon" />,
-      title: "Filters",
-      description: "Stay focused on your content using our advanced filters.",
+      title: "Advanced Filtering",
+      description:
+        "Use powerful filters to ensure your content stays focused and relevant.",
     },
     {
       icon: <FaBell className="embed-feature-icon" />,
-      title: "Alerts",
+      title: "Custom Alerts",
       description:
-        "Send the latest posts straight to your email or auto-post to telegram or slack.",
+        "Get the latest updates via email or auto-post them to platforms like Telegram and Slack.",
     },
     {
       icon: <FaThLarge className="embed-feature-icon" />,
-      title: "Widgets",
-      description: "Choose from a variety of widgets to embed on your website.",
+      title: "Flexible Widgets",
+      description:
+        "Choose from various widget styles to seamlessly embed content on your website.",
     },
   ],
 };
@@ -233,32 +492,33 @@ export const embedNewsFeedsData = {
 import { FaEnvelope, FaFileCsv, FaServer } from "react-icons/fa";
 
 export const useCaseData = {
-  title: "The easiest way to generate and consume RSS Feeds",
+  title: "Simplified RSS Feed Generation and Consumption",
   description:
-    "Tools designed to simplify the creation and management of RSS feeds. For beginners and professionals.",
+    "Our tools are designed to make RSS feed creation and management effortless, whether you're a beginner or a professional.",
   features: [
     {
       icon: <FaCode className="use-case-icon" />,
-      title: "RSS to JSON",
+      title: "Convert RSS to JSON",
       description:
-        "JSON can be easily parsed and integrated into a website or app.",
+        "Easily parse and integrate RSS feeds into your website or app using JSON.",
     },
     {
       icon: <FaEnvelope className="use-case-icon" />,
-      title: "RSS to Email",
+      title: "RSS to Email Service",
       description:
-        "Receive a daily email of the newest posts in your RSS feed.",
+        "Get daily emails with the latest updates from your RSS feeds directly in your inbox.",
     },
     {
       icon: <FaFileCsv className="use-case-icon" />,
-      title: "RSS to CSV",
-      description: "Easily extract and analyze data from multiple RSS feeds.",
+      title: "Export RSS to CSV",
+      description:
+        "Extract data from multiple RSS feeds for detailed analysis in CSV format.",
     },
     {
       icon: <FaServer className="use-case-icon" />,
-      title: "RSS API",
+      title: "RSS API Integration",
       description:
-        "Build applications that utilize RSS feeds programmatically.",
+        "Build and scale applications with ease by programmatically using our RSS feed API.",
     },
   ],
 };
@@ -269,33 +529,33 @@ export const useCaseData = {
 import { FaPalette } from "react-icons/fa";
 
 export const rssWidgetsData = {
-  title: "RSS Widgets for Your Website",
+  title: "Customizable RSS Widgets for Your Website",
   description:
-    "Widgets are easy to embed and can be customized to fit the look and feel of your website.",
+    "Effortlessly embed and style RSS widgets to match the design and aesthetic of your website.",
   features: [
     {
       icon: <FaCogs className="rss-widgets-icon" />,
-      title: "Customize Widgets",
+      title: "Personalized Widgets",
       description:
-        "Improve user experience and increase engagement with customizable RSS widgets.",
+        "Enhance user interaction with fully customizable RSS widgets tailored to your site.",
     },
     {
       icon: <FaPalette className="rss-widgets-icon" />,
-      title: "Create Presets",
+      title: "Save and Use Presets",
       description:
-        "Save customized widgets as presets and quickly apply the style you wish to use.",
+        "Create and save widget presets for easy and quick styling across multiple pages.",
     },
     {
       icon: <FaThLarge className="rss-widgets-icon" />,
-      title: "RSS Widgets",
+      title: "Versatile Widget Options",
       description:
-        "7 RSS Widgets: Wall, List, Carousel, Imageboard, Ticker, Magazine and Feed.",
+        "Choose from 7 unique widgets: Wall, List, Carousel, Imageboard, Ticker, Magazine, and Feed.",
     },
     {
       icon: <FaCode className="rss-widgets-icon" />,
-      title: "Apply Custom CSS",
+      title: "Custom CSS Support",
       description:
-        "Add advanced styles to the widgets by applying custom CSS styles.",
+        "Take control of the design by applying custom CSS to fine-tune widget appearance.",
     },
   ],
 };
@@ -314,63 +574,63 @@ import {
 } from "react-icons/fa";
 
 export const rssUseCasesData = {
-  title: "How are RSS Feeds used?",
+  title: "Popular Ways to Use RSS Feeds",
   description:
-    "RSS feeds are a convenient way to stay up to date with the latest news and content from your favorite websites. Here are some common use cases for RSS feeds.",
+    "RSS feeds are an efficient way to keep up with the latest content from your favorite websites. Here are some of the most common and valuable use cases for RSS feeds.",
   useCases: [
     {
       icon: <FaListAlt className="rss-use-case-icon" />,
       title: "News Aggregation",
       description:
-        "One of the most popular uses of RSS feeds is to aggregate news from multiple sources into a single feed.",
+        "Aggregate news from multiple sources into one place for easy access and up-to-date information.",
     },
     {
       icon: <FaBookReader className="rss-use-case-icon" />,
       title: "Personalized Content",
       description:
-        "Many websites offer RSS feeds for specific topics or categories to help you get relevant and up-to-date content.",
+        "Receive tailored updates by subscribing to topic-specific RSS feeds, ensuring relevant and fresh content.",
     },
     {
       icon: <FaFileAlt className="rss-use-case-icon" />,
-      title: "Research and Monitoring",
+      title: "Research & Monitoring",
       description:
-        "By subscribing to RSS feeds from industry blogs, news sources, and social media, you can follow the latest trends in your field.",
+        "Stay on top of industry trends by subscribing to feeds from blogs, news sites, and social media platforms.",
     },
     {
       icon: <FaPodcast className="rss-use-case-icon" />,
-      title: "Podcasts and Video",
+      title: "Podcasts & Video",
       description:
-        "RSS feeds can also be used to subscribe to podcasts and video feeds. And also use for your channel or podcast.",
+        "Subscribe to podcasts and video feeds via RSS to get the latest episodes delivered directly to you.",
     },
     {
       icon: <FaBullhorn className="rss-use-case-icon" />,
       title: "Content Marketing",
       description:
-        "For their blog or website, they can make it easy for readers to subscribe to updates and receive new content after publication.",
+        "Make it simple for your readers to subscribe and receive updates whenever you publish new content.",
     },
     {
       icon: <FaChartBar className="rss-use-case-icon" />,
       title: "Competitive Intelligence",
       description:
-        "Businesses can use RSS feeds to monitor their competitors' websites and social media profiles for updates and news.",
+        "Monitor competitor activity by subscribing to RSS feeds from their websites and social media profiles.",
     },
     {
       icon: <FaEnvelope className="rss-use-case-icon" />,
       title: "Customer Service",
       description:
-        "Businesses use RSS feeds to monitor social media channels and customer review websites for mentions of their brand.",
+        "Track customer reviews and brand mentions across social media and review platforms using RSS feeds.",
     },
     {
       icon: <FaEnvelope className="rss-use-case-icon" />,
       title: "Internal Communications",
       description:
-        "Share internal company news and updates with your team and coworkers.",
+        "Distribute company news and updates internally to keep your team informed and connected.",
     },
     {
       icon: <FaStoreAlt className="rss-use-case-icon" />,
-      title: "E-commerce",
+      title: "E-commerce Notifications",
       description:
-        "Notify customers of new products or promotions with RSS feeds.",
+        "Keep customers updated on new products, promotions, and deals with RSS feeds for your store.",
     },
   ],
 };
@@ -378,9 +638,9 @@ export const rssUseCasesData = {
 // src/data/data.jsx
 
 export const rssIntegrationsData = {
-  title: "RSS Feed Integrations",
+  title: "Seamless RSS Feed Integrations",
   description:
-    "Make your RSS feed work better by integrating with your favorite platforms. Save time by connecting your tools together. No coding required.",
+    "Enhance the power of your RSS feeds by connecting them with your favorite platforms. Effortlessly automate workflows and save time—no coding needed.",
 };
 
 // src/data/data.jsx
@@ -392,89 +652,83 @@ import WixLogo from "../assets/wix-logo.png";
 import WordPressLogo from "../assets/wordpress-logo.jpg";
 
 export const newsFeedsData = {
-  title: "News Feeds For Your Website",
+  title: "Dynamic News Feeds for Your Website",
   description:
-    "Add dynamic news feeds to your website using our customizable widgets. No coding required!",
+    "Easily add live news feeds to your website with our fully customizable widgets—no coding necessary!",
   features: [
     {
       logo: WixLogo,
       title: "Wix",
       description:
-        "Display content related to your industry on your Wix website.",
+        "Enhance your Wix site with industry-specific content displayed in real-time.",
     },
     {
       logo: ShopifyLogo,
       title: "Shopify",
       description:
-        "Showcase the latest content related to your products or blog posts on your Shopify store.",
+        "Showcase the latest blog posts or product-related content directly on your Shopify store.",
     },
     {
       logo: WordPressLogo,
       title: "WordPress",
       description:
-        "Embed news widgets on your WordPress website that keep your visitors engaged and informed.",
+        "Keep your visitors engaged with dynamic news widgets embedded on your WordPress site.",
     },
     {
       logo: HtmlLogo,
       title: "HTML",
       description:
-        "Embed news widgets on your HTML website to showcase the latest news and updates.",
+        "Easily integrate real-time news widgets into your HTML website for up-to-date content.",
     },
   ],
-  buttonText: "Website Integrations",
+  buttonText: "Explore Website Integrations",
 };
 
 // src/data/data.jsx
 
 // Import icons
-import {
-  FaGoogle,
-  FaTags,
-  FaTiktok,
-  FaTwitter,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaTags } from "react-icons/fa";
 
 export const topRssSourcesData = {
-  title: "Top RSS Sources",
+  title: "Top RSS Feed Sources",
   description:
-    "Get the latest news and updates from top sources with RSS feeds. Stay informed on world events, technology, business, and more.",
+    "Stay up to date with the latest news, trends, and updates from the best RSS sources across the web. Access content from world events, technology, business, and more.",
   sources: [
     {
       icon: <FaRss className="top-rss-sources-icon" />,
       title: "Web to RSS",
       description:
-        "Web to RSS keeps you updated on the latest news and updates from websites that don't offer RSS feeds.",
+        "Stay informed even with websites that don’t provide RSS feeds using the Web to RSS converter.",
     },
     {
       icon: <FaGoogle className="top-rss-sources-icon" />,
       title: "Google News",
       description:
-        "Google News provides RSS feeds for a variety of categories such as world news, business, technology, and more.",
+        "Get the latest from Google News, including feeds for world news, business, technology, and more.",
     },
     {
       icon: <FaTwitter className="top-rss-sources-icon" />,
-      title: "X / Twitter",
+      title: "X (formerly Twitter)",
       description:
-        "Offers a X / Twitter RSS feed generator that allows you to create feeds for individual users or specific keywords.",
+        "Create RSS feeds for X (formerly Twitter) based on individual users, hashtags, or specific keywords.",
     },
     {
       icon: <FaYoutube className="top-rss-sources-icon" />,
       title: "YouTube",
       description:
-        "YouTube provides RSS feeds for channels, allowing users to receive updates on new video uploads.",
+        "Receive updates on new video uploads by subscribing to RSS feeds for YouTube channels.",
     },
     {
       icon: <FaTiktok className="top-rss-sources-icon" />,
       title: "TikTok",
       description:
-        "Provides a TikTok RSS feed generator that allows you to create feeds for a specific TikTok user or search term.",
+        "Generate RSS feeds for specific TikTok users or search terms and stay updated with the latest content.",
     },
     {
       icon: <FaTags className="top-rss-sources-icon" />,
-      title: "Topics and Keywords",
+      title: "Custom Topics & Keywords",
       description:
-        "Create your own RSS feeds based on keywords or topics and receive updates every time new content is published.",
+        "Create personalized RSS feeds based on specific keywords or topics to get updates as soon as new content is published.",
     },
   ],
 };
@@ -486,21 +740,21 @@ import IsaacAvatar from "../assets/ann-nahl.png";
 import KirilAvatar from "../assets/buzzmoving.png"; // Assuming you have these images
 
 export const testimonialsData = {
-  title: "Read What Our Users Say",
+  title: "What Our Users Are Saying",
   testimonials: [
     {
       image: KirilAvatar,
       name: "Kiril Gantchev",
       position: "CEO of ST6",
       message:
-        "I tried several RSS feed generators and the one that worked best, aside from being the simplest, was RSS.app. It's great how useful the tool can be for somebody that doesn't know how to code.",
+        "I've tried various RSS feed generators, and RSS.app stood out as the easiest and most efficient. It’s perfect for those who aren’t tech-savvy but need a reliable tool.",
     },
     {
       image: IsaacAvatar,
       name: "Isaac Halvorson",
-      position: "iOS Developer Hisaac",
+      position: "iOS Developer at Hisaac",
       message:
-        "I've long wanted an app that generates RSS feeds from social media sites, and while there are other options that do it (IFTTT, Zapier, etc.), this is the first one that is dead simple, and works out of the box.",
+        "I've been searching for an app that creates RSS feeds from social media, and RSS.app delivers. Unlike other complex tools, this one is incredibly straightforward and works instantly.",
     },
   ],
 };
@@ -508,9 +762,9 @@ export const testimonialsData = {
 // src/data/data.jsx
 
 export const callToActionData = {
-  title: "Join thousands of happy users!",
-  buttonText: "Get My First Feed",
-  info: ["No credit card required", "7-day free trial", "Cancel anytime"],
+  title: "Join Thousands of Satisfied Users!",
+  buttonText: "Start My First Feed",
+  info: ["No credit card needed", "7-day free trial", "Cancel anytime"],
 };
 
 // src/data/data.jsx
@@ -519,46 +773,44 @@ export const footerLinksData = [
   {
     title: "RSS Feeds",
     links: [
-      { name: "Webpage", url: "/webpage" },
-      { name: "Google News", url: "/google-news" },
-      { name: "Instagram", url: "/instagram" },
+      { name: "Webpage Feeds", url: "/webpage" },
+      { name: "Google News Feeds", url: "/google-news" },
+      { name: "Instagram Feeds", url: "/instagram" },
     ],
   },
   {
     title: "Widgets",
     links: [
-      { name: "RSS to HTML", url: "/rss-to-html" },
-      { name: "News Wall", url: "/news-wall" },
-      { name: "News Ticker", url: "/news-ticker" },
+      { name: "RSS to HTML Widget", url: "/rss-to-html" },
+      { name: "News Wall Widget", url: "/news-wall" },
+      { name: "News Ticker Widget", url: "/news-ticker" },
     ],
   },
   {
     title: "Tools & Features",
     links: [
-      { name: "RSS Builder", url: "/rss-builder" },
-      { name: "Bots & Alerts", url: "/bots-alerts" },
-      { name: "RSS to Email", url: "/rss-to-email" },
+      { name: "RSS Feed Builder", url: "/rss-builder" },
+      { name: "Bots & Alerts Tools", url: "/bots-alerts" },
+      { name: "RSS to Email Feature", url: "/rss-to-email" },
     ],
   },
   {
     title: "Bots & Alerts",
     links: [
-      { name: "YouTube Telegram Bot", url: "/youtube-telegram-bot" },
-      { name: "Google News Telegram Bot", url: "/google-news-telegram-bot" },
-      { name: "RSS Feed Telegram Bot", url: "/rss-feed-telegram-bot" },
+      { name: "YouTube to Telegram Bot", url: "/youtube-telegram-bot" },
+      { name: "Google News to Telegram Bot", url: "/google-news-telegram-bot" },
+      { name: "RSS Feed to Telegram Bot", url: "/rss-feed-telegram-bot" },
     ],
   },
   {
     title: "Blog",
     links: [
-      { name: "How to Get RSS Feeds From Websites", url: "/get-rss-feeds" },
-      { name: "The Best News Aggregators in 2022", url: "/news-aggregators" },
-      { name: "RSS to Email: Automatically Send News", url: "/rss-to-email" },
+      { name: "How to Extract RSS Feeds from Websites", url: "/get-rss-feeds" },
+      { name: "Top News Aggregators for 2022", url: "/news-aggregators" },
+      { name: "RSS to Email: Automate News Delivery", url: "/rss-to-email" },
     ],
   },
 ];
-
-// src/data/data.jsx
 
 // src/data/data.jsx
 
@@ -567,7 +819,7 @@ export const footerData = {
   name: "ORMDASH.APP",
   links: [
     { name: "Terms & Conditions", url: "/terms" },
-    { name: "Privacy", url: "/privacy" },
+    { name: "Privacy Policy", url: "/privacy" },
   ],
   language: "English",
 };
