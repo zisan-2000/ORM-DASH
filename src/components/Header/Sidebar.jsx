@@ -3,7 +3,14 @@ import { Link } from "react-router-dom";
 
 const Sidebar = ({ isMenuOpen, toggleMenu, navLinks }) => {
   return (
-    <Drawer anchor="left" open={isMenuOpen} onClose={toggleMenu}>
+    <Drawer
+      anchor="left"
+      open={isMenuOpen}
+      onClose={toggleMenu}
+      PaperProps={{
+        sx: { width: 240 }, // Drawer এর প্রস্থ 320px করা হয়েছে
+      }}
+    >
       <List>
         {navLinks.map((link, index) => (
           <ListItem
