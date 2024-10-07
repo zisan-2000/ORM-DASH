@@ -1,7 +1,7 @@
 // src/components/WhyUseUsSection.jsx
 
 import React from "react";
-import { whyUseUsData } from "../Data/Data"; // Import the data
+import { whyUseUsData } from "../Data/whyUseUsData"; // Import the data
 
 const WhyUseUsSection = () => {
   return (

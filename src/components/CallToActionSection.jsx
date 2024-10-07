@@ -1,6 +1,7 @@
 import React from "react";
-import { backgroundColors, callToActionData } from "../Data/Data"; // Importing data for the section
-
+// import { backgroundColors, callToActionData } from "../Data/Data"; // Importing data for the section
+import { backgroundColors } from "../Data/backgroundColors";
+import { callToActionData } from "./../Data/callToActionData";
 const CallToActionSection = () => {
   return (
     <section

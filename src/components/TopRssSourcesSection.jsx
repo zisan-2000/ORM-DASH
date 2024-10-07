@@ -1,5 +1,5 @@
 import React from "react";
-import { topRssSourcesData } from "../Data/Data"; // Importing data for the section
+import { topRssSourcesData } from "../Data/topRssSourcesData"; // Importing data for the section
 
 const TopRssSourcesSection = () => {
   return (

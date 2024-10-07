@@ -46,11 +46,11 @@ button:hover {
 }
 
 .trusted-logos {
-  @apply grid gap-8 lg:gap-16; /* Apply grid layout with responsive gaps */
+  @apply flex flex-wrap justify-center gap-8; /* Use Flexbox with wrapping */
 }
 
 .trusted-logos img {
-  @apply h-20 w-auto opacity-75 transition duration-300 ease-in-out hover:opacity-100;
+  @apply h-28 w-auto rounded-full opacity-75 transition duration-300 ease-in-out hover:opacity-100;
 }
 
 /* Why Use Us Section */

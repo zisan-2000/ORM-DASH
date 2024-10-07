@@ -1,6 +1,6 @@
 import React from "react";
 import RssAppImage from "../assets/rssIntegrate.png"; // Assuming the RSS app image is stored here
-import { rssIntegrationsData } from "../Data/Data"; // Importing data for the section
+import { rssIntegrationsData } from "../Data/rssIntegrationsData"; // Importing data for the section
 
 const RssIntegrationsSection = () => {
   return (

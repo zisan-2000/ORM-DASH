@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGlobeAmericas, FaRss } from "react-icons/fa"; // Import icons
-import { footerData } from "../Data/Data"; // Importing data for the footer
+import { footerData } from "../Data/footerData"; // Importing data for the footer
 
 const FooterSection = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { footerLinksData } from "../Data/Data"; // Importing data for the section
+import { footerLinksData } from "../Data/footerLinksData"; // Importing data for the section
 
 const FooterLinksSection = () => {
   return (

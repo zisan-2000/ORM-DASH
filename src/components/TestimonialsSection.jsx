@@ -1,5 +1,5 @@
 import React from "react";
-import { testimonialsData } from "../Data/Data"; // Importing data for the section
+import { testimonialsData } from "../Data/testimonialsData"; // Importing data for the section
 
 const TestimonialsSection = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa"; // Import icons for the toggle button
 import { Link } from "react-router-dom";
-import { headerData } from "../Data/Data";
+import { headerData } from "../Data/headerData";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

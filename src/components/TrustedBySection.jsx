@@ -1,7 +1,7 @@
 // src/components/TrustedBySection.jsx
 
 import React from "react";
-import { trustedByData } from "../Data/Data"; // Importing trustedByData
+import { trustedByData } from "../Data/trustedByData"; // Importing trustedByData
 
 const TrustedBySection = () => {
   return (
@@ -13,7 +13,7 @@ const TrustedBySection = () => {
             key={company.name}
             src={company.logo}
             alt={`${company.name} logo`}
-            className="trusted-logo"
+            className="trusted-logos img"
           />
         ))}
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { newsFeedsData } from "../Data/Data"; // Importing data for the section
+import { newsFeedsData } from "../Data/newsFeedsData"; // Importing data for the section
 
 const NewsFeedsSection = () => {
   return (

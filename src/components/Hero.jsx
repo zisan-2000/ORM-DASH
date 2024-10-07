@@ -1,6 +1,8 @@
 // src/components/Hero.js
 import React from "react";
-import { backgroundColors, heroData } from "../Data/Data"; // Assuming you named it dada
+// import { backgroundColors, heroData } from "../Data/Data"; // Assuming you named it dada
+import { backgroundColors } from "../Data/backgroundColors";
+import { heroData } from "../Data/heroData";
 
 const Hero = () => {
   return (

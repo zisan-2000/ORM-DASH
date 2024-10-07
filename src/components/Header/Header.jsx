@@ -1,6 +1,6 @@
 import { AppBar, Box, Toolbar } from "@mui/material";
 import React, { useState } from "react";
-import { headerData } from "../../Data/Data";
+import { headerData } from "../../Data/headerData";
 import Logo from "./Logo";
 import MobileMenuToggle from "./MobileMenuToggle";
 import NavLinks from "./NavLinks";

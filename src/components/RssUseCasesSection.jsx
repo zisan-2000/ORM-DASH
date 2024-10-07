@@ -1,5 +1,5 @@
 import React from "react";
-import { rssUseCasesData } from "../Data/Data"; // Importing data for the section
+import { rssUseCasesData } from "../Data/rssUseCasesData"; // Importing data for the section
 
 const RssUseCasesSection = () => {
   return (

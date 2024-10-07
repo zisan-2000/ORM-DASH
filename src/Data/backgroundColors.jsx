@@ -1,0 +1,16 @@
+export const backgroundColors = {
+  hero: "bg-cyan-900",
+  callToAction: "bg-cyan-900",
+  trustedBy: "bg-slate-100",
+  whyUseUs: "bg-slate-100",
+  topFeatures: "bg-slate-100",
+  generateRssFeeds: "bg-slate-100",
+  embedNewsFeeds: "bg-slate-100",
+  useCase: "bg-slate-100",
+  rssWidgets: "bg-slate-100",
+  rssIntegrations: "bg-slate-100",
+  newsFeeds: "bg-slate-100",
+  topRssSources: "bg-slate-100",
+  testimonials: "bg-slate-100",
+  footer: "bg-slate-100",
+};

@@ -1,6 +1,5 @@
 // src/data/dada.js
 // src/data/dada.js
-
 // src/data/data.jsx
 
 export const backgroundColors = {

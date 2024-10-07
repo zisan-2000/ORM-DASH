@@ -1,5 +1,5 @@
 import React from "react";
-import { topFeaturesData } from "../Data/Data"; // Importing top features data
+import { topFeaturesData } from "../Data/topFeaturesData"; // Importing top features data
 
 const TopFeaturesSection = () => {
   return (

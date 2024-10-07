@@ -1,5 +1,5 @@
 import React from "react";
-import { useCaseData } from "../Data/Data"; // Importing data for the section
+import { useCaseData } from "../Data/useCaseData"; // Importing data for the section
 
 const UseCaseSection = () => {
   return (

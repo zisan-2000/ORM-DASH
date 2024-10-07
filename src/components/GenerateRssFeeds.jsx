@@ -1,6 +1,6 @@
 import React from "react";
 import RssAppImage from "../assets/rssapp.png"; // Assuming the image you uploaded is saved in assets folder
-import { generateRssFeedsData } from "../Data/Data"; // Importing data for the section
+import { generateRssFeedsData } from "../Data/generateRssFeedsData"; // Importing data for the section
 
 const GenerateRssFeeds = () => {
   return (

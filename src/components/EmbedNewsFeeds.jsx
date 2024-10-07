@@ -1,6 +1,6 @@
 import React from "react";
 import RssAppImage from "../assets/rssapp2.png"; // Assuming the image you uploaded is saved in assets folder
-import { embedNewsFeedsData } from "../Data/Data"; // Importing data for the section
+import { embedNewsFeedsData } from "../Data/embedNewsFeedsData"; // Importing data for the section
 
 const EmbedNewsFeeds = () => {
   return (
