@@ -14,7 +14,9 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="fixed">
+      {" "}
+      {/* Changed position to fixed */}
       <Toolbar>
         {/* Logo for larger screens */}
         <Logo logoIcon={headerData.logoIcon} logo={headerData.logo} />
